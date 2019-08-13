@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Apt_SalesRule",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Customer wise coupon.",
+    "authors": [
+    {
+        "name": "prax Ahir",
+        "email": "info@aptwebdesign.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Apt
+ * @package    Apt_SalesRule
+ */
+ -->
+<config>
+    <modules>
+        <Apt_SalesRule>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Apt_SalesRule>
+    </modules>
+</config> 

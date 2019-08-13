@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * @category    Apt
+ * @package     Apt_SalesRule
+ */
+-->
+<config>
+    <modules>
+        <Apt_SalesRule>
+            <version>0.1.1</version>
+        </Apt_SalesRule>
+    </modules>
+    <global>
+        <resources>
+            <apt_salesrule_setup>
+                <setup>
+                    <module>Apt_SalesRule</module>
+                    <class>Mage_Sales_Model_Resource_Setup</class>
+                </setup>
+            </apt_salesrule_setup>
+        </resources>
+        <models>
+            <apt_salesrule>
+                <class>Apt_SalesRule_Model</class>
+            </apt_salesrule>
+            <salesrule>
+                 <rewrite>
+                        <validator>Apt_SalesRule_Model_Validator</validator>
+                </rewrite>
+            </salesrule>
+        </models>
+    </global>
+    <adminhtml>
+        <events>
+          <adminhtml_promo_quote_edit_tab_main_prepare_form>
+            <observers>
+              <apt_salesrule_add_customer>
+                <class>Apt_SalesRule_Model_Observer</class>
+                <method>addCustomerField</method>
+              </apt_salesrule_add_customer>
+            </observers>
+          </adminhtml_promo_quote_edit_tab_main_prepare_form>     
+          
+          <salesrule_rule_save_before>
+            <observers>
+              <apt_salesrule_add_customer>
+                <class>Apt_SalesRule_Model_Observer_Customer</class>
+                <method>saveCustomer</method>
+              </apt_salesrule_add_customer>
+            </observers>
+          </salesrule_rule_save_before>
+          
+        </events>
+    </adminhtml>   
+</config>

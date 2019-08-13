@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Apt_SalesRule</name>
+    <version>0.1.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Customer wise coupon.</summary>
+    <description>Customer wise coupon. admin can assign a coupon to customer.</description>
+    <notes>Initial version</notes>
+    <authors><author><name>prax Ahir</name><user>praxahir</user><email>info@aptwebdesign.com</email></author></authors>
+    <date>2014-07-01</date>
+    <time>07:07:43</time>
+    <contents><target name="magelocal"><dir name="Apt"><dir name="SalesRule"><dir name="Model"><dir name="Observer"><file name="Customer.php" hash="9658ea4c118e75b59c833075ed24cf44"/></dir><file name="Observer.php" hash="af848ae392158a6a2b89307802a89710"/><file name="Validator.php" hash="a5f7d32dd1a91a4f649d9d1531f0a853"/></dir><dir name="etc"><file name="config.xml" hash="7e5b661f3ea1360590122b40944e7ee0"/></dir><dir name="sql"><dir name="apt_salesrule_setup"><file name="mysql4-install-0.1.0.php" hash="23f06669a7baf644c14955df2497e0fe"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Apt_SalesRule.xml" hash="868c2dfc61c7f5389589ca68fc2e6090"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
