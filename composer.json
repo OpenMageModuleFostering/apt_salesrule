@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Apt_SalesRule",
+    "name": "openmage-module-fostering\/apt_salesrule",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Customer wise coupon.",
     "authors": [
